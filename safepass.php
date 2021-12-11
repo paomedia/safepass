@@ -121,8 +121,7 @@ class SafePass
         $password = trim(fgets(STDIN));
         `stty echo`;
         echo "\n";
-        return $password;
-        
+        return $password;      
     }
 
     private function getMasterKey()
@@ -382,7 +381,7 @@ class SafePass
         echo "  len                password length (default=" . self::PASS_RULES[0] . ")\n";
         echo "  lc                 minimum lowercase chars (default=" . self::PASS_RULES[1] . ")\n";
         echo "  uc                 exact uppercase chars (default=" . self::PASS_RULES[2] . ")\n";
-        echo "  spec               exact uppercase chars (default=" . self::PASS_RULES[3] . ")\n";
+        echo "  spec               exact special chars (default=" . self::PASS_RULES[3] . ")\n";
         echo "  num                exact numerical chars (default=" . self::PASS_RULES[4] . ")\n";        
         return 0;
     }
