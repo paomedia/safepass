@@ -1,7 +1,7 @@
 # safepass
 - Simple command line, self-contained password manager.
 - Should work on most Linux/Unix based systems.
-- Require php-cli (PHP 5 >= 5.3.0)
+- Require php-cli (PHP 5 >= 5.3.0) e.g. $ apt install php-cli
 
 ## Features
 - AES 256 encrypted
@@ -11,12 +11,21 @@
 - ...
 
 ## Setup
-- Download safepass.php
-- Chmod it +x to make it executable
-- Rename it if you want
-- Put it in your ~/bin directory, on a usb stick or anywhere you want
-- Masterkey (main password) is defined on the first run
 
+- Download safepass.php
+- Rename it if you want
+- Chmod it +x to make it executable
+- Put it in your ~/bin directory, on a usb stick or anywhere you want
+- Masterkey (main password) will be set on your first use
+
+### Example for command line lovers
+
+```
+$ wget https://git.io/JDGbs -O mypersonalsafe
+$ chmod +x mypersonalsafe
+$ ./mypersonalsafe reset
+```
+ 
 ## Main commands
 
 - safepass.php add
@@ -55,7 +64,7 @@ GENPASSWD USAGE
   len                password length (default=16)
   lc                 minimum lowercase chars (default=6)
   uc                 exact uppercase chars (default=6)
-  spec               exact uppercase chars (default=2)
+  spec               exact special chars (default=2)
   num                exact numerical chars (default=2)
 
 ```
