@@ -17,7 +17,7 @@ class SafePass
     const VERSION = '0.1';
     const PERMISSIONS = 0700;
     const PERMISSIONS_MK = 0400;
-    const CIPHER = 'aes-256-cbc-hmac-sha256';
+    const CIPHER = 'aes-256-cbc';
 
     /* 4 types of chars, lowercase, upercase, special, numeric */
     const PASS_CHARS = [
