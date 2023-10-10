@@ -14,7 +14,7 @@ class SafePass
 {
     /* -- YOU MAY EDIT const to fit your needs -- */
     
-    const VERSION = '0.1';
+    const VERSION = '0.2';
     const PERMISSIONS = 0700;
     const PERMISSIONS_MK = 0400;
     const CIPHER = 'aes-256-cbc';
